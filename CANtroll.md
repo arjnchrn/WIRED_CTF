@@ -8,7 +8,7 @@
 sudo modprobe vcan<br>
   loads Virtual CAN kernel module on linux system which sets up a virtual CAN network as I do not have access to a physicall CAN connection</p>
 
-# Setting Up And Activating Virtual Can Devices
+## Setting Up And Activating Virtual Can Devices
 <p>sudo ip link add dev vcan0 type vcan<br>
     sets up a virtual CAN network with virtual device named vcan0<br>
   sudo ip link set up vcan0<br>
