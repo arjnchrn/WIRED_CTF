@@ -4,7 +4,7 @@
 
 ## Loading Necessary Linux Kernels
 <p>sudo modprobe can<br>
-  loads CAN kernel module on linux which allows us to work with CAN devices with the system
+  loads CAN kernel module on linux which allows us to work with CAN devices with the system<br></p>
 sudo modprobe vcan<br>
   loads Virtual CAN kernel module on linux system which sets up a virtual CAN network as I do not have access to a physicall CAN connection</p>
 
