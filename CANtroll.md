@@ -16,14 +16,20 @@ sudo modprobe vcan<br>
 
 ## Setting up ICSim
 <p>Loaded up ICSim and controls in seperate terminal tabs.<br>
+  
 Set up cansniffer at vcan0, colour coded changing data by using -c argument (cansniffer -c vcan0)<br>
+
 entering shift+3 multiple times into cansniffer filters out most of the changing data, leaving the output much cleaner and able to focus on the changes corresponding to user inputs<br>
+
 the rapidly changing data seen across almost all arbitration ID's before filtering is due to the "controls" program simulating an engine idle<br></p>
 
 ## Cracking the flag
 <p>Found out arbitration id to increase speed is 244, by running (cansniffer -c vcan0)<br>
+  
 using cansend, sent a data packet with arbid 244 high enough to break past the speed limit imposed<br>
+
 data is in hexadecimal format. Therefore crafting an input with a lot of F's towards the end will max out the speedometer<br>
+
 cansend vcan0 244#000000ffff maxes out the speedometer and reveals the flag<br></p>
 
 flag is : wired{y0u_c4n}
