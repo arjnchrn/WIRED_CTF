@@ -25,11 +25,8 @@ the rapidly changing data seen across almost all arbitration ID's before filteri
 
 ## Cracking the flag
 <p>Found out arbitration id to increase speed is 244, by running (cansniffer -c vcan0)<br>
-  
-using cansend, sent a data packet with arbid 244 high enough to break past the speed limit imposed<br>
-
-data is in hexadecimal format. Therefore crafting an input with a lot of F's towards the end will max out the speedometer<br>
-
+  using cansend, sent a data packet with arbid 244 high enough to break past the speed limit imposed<br></p>
+<P>data is in hexadecimal format. Therefore crafting an input with a lot of F's towards the end will max out the speedometer<br>
 cansend vcan0 244#000000ffff maxes out the speedometer and reveals the flag<br></p>
 
 flag is : wired{y0u_c4n}
