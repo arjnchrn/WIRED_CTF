@@ -10,10 +10,9 @@ sudo modprobe vcan<br>
 
 ## Setting Up And Activating Virtual Can Devices
 <p>sudo ip link add dev vcan0 type vcan<br>
-    sets up a virtual CAN network with virtual device named vcan0<br>
-  sudo ip link set up vcan0<br>
-    activates the device vcan0<br>
-</p>
+    sets up a virtual CAN network with virtual device named vcan0<br></p>
+  <P>sudo ip link set up vcan0<br>
+    activates the device vcan0<br></P>
 
 ## Setting up ICSim
 <p>Loaded up ICSim and controls in seperate terminal tabs.<br>
